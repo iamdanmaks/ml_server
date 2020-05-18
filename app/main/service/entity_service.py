@@ -1,9 +1,8 @@
 from cachetools import cached, LRUCache
-from flask_babel import get_text
 
 from .. import ner_tokenizer
 from .. import ner_model
-from .. import new_idx2tag
+from .. import ner_idx2tag
 
 from ..utils.base_preparation import sentence_tokenizer
 from ..utils.base_preparation import prepare_sentences
@@ -31,7 +30,6 @@ def find_entities(text):
 
     response_object = {
         'status': 'success',
-        'message': gettext('Entities are marked'),
         'result': predictions
     }
 
