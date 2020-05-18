@@ -1,0 +1,9 @@
+cachetools==3.1.0
+Flask_Cors==3.0.7
+transformers==2.9.1
+Flask==1.1.1
+Flask_Babel==0.11.2
+flask_restplus==0.13.0
+Flask_Script==2.0.6
+spacy==2.2.4
+numpy==1.16.4
